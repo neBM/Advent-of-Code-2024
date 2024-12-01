@@ -1,17 +1,18 @@
 package uk.co.brmartin.adventofcode2024.utils
 
-import kotlinx.datetime.*
-import kotlinx.serialization.Serializable
-import kotlinx.coroutines.*
+import okhttp3.OkHttpClient
+import okhttp3.Request.Builder
 
-@Serializable
-class Printer(val message: String) {
-    fun printMessage() = runBlocking {
-        val now: Instant = Clock.System.now()
-        launch {
-            delay(1000L)
-            println(now.toString())
-        }
-        println(message)
-    }
+object InputSupplier {
+    private val httpClient = OkHttpClient()
+
+    fun getInputForDay(day: Int) = Builder()
+        .url("https://adventofcode.com/2024/day/$day/input")
+        .header("Cookie", "session=${System.getenv("AOC_SESSION") ?: error("AOC_SESSION not set")}")
+        .build()
+        .let(httpClient::newCall)
+        .execute()
+        .also { if (!it.isSuccessful) error("Failed to get input for day $day: $it") }
+        .body!!
+        .charStream()
 }

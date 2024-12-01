@@ -8,6 +8,7 @@ plugins {
 
 dependencies {
     // Apply the kotlinx bundle of dependencies from the version catalog (`gradle/libs.versions.toml`).
-    implementation(libs.bundles.kotlinxEcosystem)
+    implementation(libs.kotlinxDataFrame)
+    implementation(libs.okhttp)
     testImplementation(kotlin("test"))
 }
