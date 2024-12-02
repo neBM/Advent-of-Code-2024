@@ -5,9 +5,9 @@ plugins {
 
 dependencies {
     implementation(project(":utils"))
-    implementation(project.libs.kotlinxDataFrame)
+    implementation(libs.kotlinxDataFrame)
     testImplementation(kotlin("test"))
-    testImplementation(project.libs.kotest)
+    testImplementation(libs.kotest)
 }
 
 application {

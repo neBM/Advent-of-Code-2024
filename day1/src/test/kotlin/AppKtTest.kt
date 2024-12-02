@@ -7,7 +7,13 @@ class AppKtTest {
 
     @Test
     fun solveTest() {
-        val reader = "3   4\n4   3\n2   5\n1   3\n3   9\n3   3".reader()
+        val reader = """
+            3   4
+            4   3
+            2   5
+            1   3
+            3   9
+            3   3""".trimIndent().reader()
 
         solve(reader) shouldBe 11
     }

@@ -5,11 +5,11 @@ import org.jetbrains.kotlinx.dataframe.api.count
 import org.jetbrains.kotlinx.dataframe.api.dataFrameOf
 import org.jetbrains.kotlinx.dataframe.api.mapToColumn
 import org.jetbrains.kotlinx.dataframe.api.sum
-import uk.co.brmartin.adventofcode2024.utils.InputSupplier.getInputForDay
+import uk.co.brmartin.adventofcode2024.utils.InputsService
 import java.io.Reader
 
 fun main() {
-    val sum = solve(getInputForDay(1))
+    val sum = solve(InputsService().getInputsForDay(1u))
     println(sum)
 }
 
