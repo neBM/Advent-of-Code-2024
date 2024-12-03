@@ -22,6 +22,7 @@ plugins {
 include(":day1")
 include(":day1.1")
 include(":day2")
+include(":day2.1")
 include(":utils")
 
 rootProject.name = "adventofcode2024"
