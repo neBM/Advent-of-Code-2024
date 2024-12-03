@@ -2,7 +2,7 @@ import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test
 import uk.co.brmartin.adventofcode2024.app.solve
 
-class AppKtTest {
+class Day1Challenge2KtTest {
 
     @Test
     fun solveTest() {

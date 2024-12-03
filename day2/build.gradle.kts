@@ -11,5 +11,5 @@ dependencies {
 }
 
 application {
-    mainClass = "uk.co.brmartin.adventofcode2024.app.Day1"
+    mainClass = "uk.co.brmartin.adventofcode2024.app.Day2Kt"
 }

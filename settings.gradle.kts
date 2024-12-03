@@ -21,6 +21,7 @@ plugins {
 // Learn more about structuring projects with Gradle - https://docs.gradle.org/8.7/userguide/multi_project_builds.html
 include(":day1")
 include(":day1.1")
+include(":day2")
 include(":utils")
 
 rootProject.name = "adventofcode2024"
