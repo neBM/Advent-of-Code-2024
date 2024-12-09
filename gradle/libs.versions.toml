@@ -1,6 +1,6 @@
 [versions]
 kotlin = "2.1.0"
-kotlinxDataframe = "0.14.2"
+kotlinxDataframe = "0.15.0"
 okhttp = "4.12.0"
 kotest = "5.9.1"
 mockk = "1.13.13"
